@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>你的名字 · Blog</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">YourName</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#posts">Posts</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" aria-label="切换主题">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <img class="avatar" src="https://picsum.photos/seed/you/280" alt="avatar">
+        </div>
+        <div class="hero-right">
+          <h1>你好，我是 <span class="accent">你的名字</span></h1>
+          <p class="lead">前端工程师 • 数据可视化 • 音乐爱好者</p>
+          <p class="motto">A blog is a studio — ideas, experiments, and notes.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#posts">阅读我的文章</a>
+            <a class="btn ghost" href="#projects">查看项目</a>
+          </div>
+          <ul class="meta">
+            <li>所在地：成都（示例）</li>
+            <li>状态：开放合作 · 寻找实习</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container about glass">
+      <h2>关于我</h2>
+      <div class="about-grid">
+        <div>
+          <p>我是一个热爱前端与数据可视化的开发者，喜欢用代码和数据讲故事。平时做开源、做小工具、也做一些音乐制作。</p>
+          <p>技能：HTML · CSS · JavaScript · D3.js · ECharts · React / Vue</p>
+        </div>
+        <div class="skills">
+          <h3>技术栈</h3>
+          <div class="tech-grid">
+            <div class="tech">JavaScript</div>
+            <div class="tech">D3</div>
+            <div class="tech">ECharts</div>
+            <div class="tech">React</div>
+            <div class="tech">Node</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Posts -->
+    <section id="posts" class="container cards">
+      <h2>最新文章</h2>
+      <div class="card-grid" id="postList">
+        <!-- JS 将在这里插入文章卡片 -->
+      </div>
+      <div class="more">
+        <a class="btn ghost" href="#all">查看全部文章</a>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="container projects">
+      <h2>项目精选</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>可交互数据可视化演示</h3>
+          <p>使用 D3 与 ECharts 做的可视化 demo，包含时间轴与地理图层。</p>
+          <a class="link" href="#">查看项目 →</a>
+        </article>
+        <article class="project-card">
+          <h3>前端小组件库</h3>
+          <p>一组轻量级 UI 组件，便于复用与定制化主题。</p>
+          <a class="link" href="#">查看项目 →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container contact glass">
+      <h2>联系我</h2>
+      <p>邮箱: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/yourname" target="_blank" rel="noopener">github.com/yourname</a></p>
+      <div class="socials">
+        <a class="social" href="#" aria-label="网易云">🎵</a>
+        <a class="social" href="#" aria-label="Bilibili">📺</a>
+        <a class="social" href="#" aria-label="掘金">✍️</a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> 你的名字 · Built with ❤️</small>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
