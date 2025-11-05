@@ -1,0 +1,13 @@
+{
+  "name": "ricer-blog",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "web"
+  ],
+  "scripts": {
+    "build:web": "cd web && npm run build",
+    "build:docs": "cd docs && npx vitepress build",
+    "build": "npm run build:web && npm run build:docs"
+  }
+}
